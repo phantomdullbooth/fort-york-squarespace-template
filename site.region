@@ -10,7 +10,12 @@
 
   <body>
   <header>
-    <h2>{website.siteTitle}</h2>
+    <h2>Fort York</h2>
+
+    <div class="nav-icon">
+        <div class="nav-icon--top"></div>
+        <div class="nav-icon--bottom"></div>
+    </div>
   </header>
 
 
