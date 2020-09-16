@@ -1,8 +1,20 @@
-/* CSS pre-processing by {less}. http://lesscss.org/
-***************************************************/
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('fonts/spacegrotesk-bold.woff2') format('woff2'),
+    url('fonts/spacegrotesk-bold.woff') format('woff'),
+    url('fonts/spacegrotesk-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.header-height {
+    height: 58px;
+}
+
+
 
 body {
-  color: #000000;
+  color: #ff0042;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
 }
@@ -20,7 +32,17 @@ body {
 h1.site-title {
   a {
     color: #000000;
+    font-family: 'Space Grotesk';
     font-weight: 700;
     text-decoration: none;
   }
 }
+
+
+h1 {
+    font-family: 'Space Grotesk';
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

@@ -9,13 +9,19 @@
   </head>
 
   <body>
+  <header>
+    <h2>{website.siteTitle}</h2>
+  </header>
 
-    <div class="container">
+
+
+
+    {#  <div class="container">
 
       <header class="header">
         <h1 class="site-title">
           <a href="/">
-            Developer Platform Beginner Tutorial
+            Apple
           </a>
         </h1>
       </header>
@@ -26,7 +32,7 @@
         </div>
       </main>
 
-    </div>
+    </div>  }
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
     {squarespace-footers}
