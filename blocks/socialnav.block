@@ -1,8 +1,7 @@
 <nav>
+    <h1 style="color:#808080">Follow us</h1>
+
     {.repeated section items}
-        <h1 style="color:#808080">Follow us</h1>
-
-
         {.section externalLink}
             <h1><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h1>
         {.end}
