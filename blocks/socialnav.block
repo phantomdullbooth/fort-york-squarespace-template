@@ -1,10 +1,5 @@
 <nav>
     {.repeated section items}
-
-        {.section collection}
-            <a href="{fullUrl}" class="{.section active} active-link{.end}">{navigationTitle}</a>
-        {.end}
-
         {.section externalLink}
             <a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>
         {.end}
