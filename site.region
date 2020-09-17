@@ -23,6 +23,8 @@
 
     <div class="footer">
         <squarespace:navigation navigationId="socialnav" template="socialnav" />
+
+        <squarespace:block-field id="search--sitewide" columns="1" />
     </div>
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
