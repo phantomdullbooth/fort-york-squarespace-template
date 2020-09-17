@@ -22,7 +22,7 @@
 
 
     <div class="footer">
-        <squarespace:navigation class="nav--social" navigationId="socialnav" template="socialnav" />
+        <squarespace:navigation navigationId="socialnav" template="socialnav" />
     </div>
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
