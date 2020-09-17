@@ -23,6 +23,7 @@
 
     <div class="footer">
         <div class="nav--social">
+        <h1>Follow us</h1>
             <squarespace:navigation navigationId="socialnav" template="socialnav" />
         </div>
     </div>
