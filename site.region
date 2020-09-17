@@ -18,6 +18,8 @@
     </div>
   </header>
 
+  <squarespace:block-field id="primary-feature" columns="1" />
+
 
 
 
