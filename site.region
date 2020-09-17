@@ -9,7 +9,7 @@
   </head>
 
   <body>
-  <header>
+  <div class="header">
     <h2>Fort York</h2>
 
     <div class="nav-icon">
