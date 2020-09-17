@@ -16,7 +16,7 @@
         <div class="nav-icon--top"></div>
         <div class="nav-icon--bottom"></div>
     </div>
-  </header>
+  </div>
 
   <squarespace:block-field id="primary-feature" columns="1" />
 
