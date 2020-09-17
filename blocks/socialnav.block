@@ -1,7 +1,7 @@
 <nav>
     {.repeated section items}
         {.section externalLink}
-            <a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a>
+            <h1><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h1>
         {.end}
 
     {.end}
