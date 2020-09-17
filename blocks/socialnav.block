@@ -1,5 +1,5 @@
 <nav class="nav--social">
-    <h1 style="color:#808080">Follow us</h1>
+    <h1>Follow us</h1>
 
     {.repeated section items}
         {.section externalLink}
