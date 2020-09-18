@@ -38,7 +38,7 @@
                 {excerpt}
 
                 <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle('main', `{addedOn}`, `{categories}`)</script>
+                <script>postmarkArticle(`{id}`, `{addedOn}`, `{categories}`)</script>
             </div>
         {.end}
     </squarespace:query>
