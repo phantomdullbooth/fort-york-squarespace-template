@@ -19,6 +19,9 @@
     </div>
 
     <squarespace:query collection="blog" limit="2" featured="true">
+        <div>
+    <h1>{items.title}</h1>
+        </div>
 
     </squarespace:query>
 
