@@ -1,6 +1,12 @@
 <!-- ========== INDIVIDUAL ARTICLE =========== -->
 <!-- ========== INDIVIDUAL ARTICLE =========== -->
 
+<article>
+<h1>Apples</h1>
+</article>
+
+
+
 <div class="page-subpage">
 
     {.section item}
