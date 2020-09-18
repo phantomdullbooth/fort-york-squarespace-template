@@ -30,6 +30,18 @@
         </div>
     </squarespace:query>
 
+    <squarespace:query collection="blog" limit="1" featured="true">
+        <section>
+            {.repeated section items}
+                <span id="unimportant" class="unimportant"></span>
+                <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
+
+                <squarespace:script src="text.js" combo="false" />
+                <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
+            {.end}
+        <section>
+    </squarespace:query>
+
 
     <div class="footer">
         <squarespace:navigation navigationId="socialnav" template="socialnav" />
