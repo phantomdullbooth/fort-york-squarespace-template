@@ -6,7 +6,7 @@
     
         <div class="article__header">
             <span class="unimportant" id="article__info--{id}"></span>
-            <h3>{title}</h3>
+            <h3 class="no-underline">{title}</h3>
         </div>
 
         <squarespace:script src="text.js" combo="false" />
