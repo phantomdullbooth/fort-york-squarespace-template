@@ -39,7 +39,7 @@
                     basicInformation.innerHTML = month + ' ' + date + ' —— ' + mainCategory
                 }
     
-                postmarkArticle(`{item.addedOn}, {item.categories[0]}`)
+                postmarkArticle(`{addedOn}`, `{categories}`)
             </script>
             {.end}
         </div>
