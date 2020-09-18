@@ -35,6 +35,7 @@
             {.repeated section items}
                 <span class="unimportant" id="unimportant-main"></span>
                 <a href="{fullUrl}"><h3>{title}</h3></a>
+                {body}
 
                 <squarespace:script src="text.js" combo="false" />
                 <script>postmarkArticle('main', `{addedOn}`, `{categories}`)</script>
