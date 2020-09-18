@@ -26,6 +26,7 @@
             {.end}
 
             <script>
+            console.log(`{item.addedOn})
                 function postmarkArticle(publishedOn, mainCategory) {
                     const basicInformation = document.getElementById('unimportant')
                     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
