@@ -2,5 +2,7 @@
 <!-- ========== LIST OF ARTICLES =========== -->
 
 <div class="articles">
-
+    {.section collection}
+        <h1>Latest {title}</h1>
+    {.end}
 </div>
