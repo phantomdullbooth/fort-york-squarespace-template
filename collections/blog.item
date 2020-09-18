@@ -15,6 +15,7 @@
 
         <div class="article__text">
             {body}
+            <p>——{author.displayName}
         </div>
 
         <squarespace:script src="text.js" combo="false" />
