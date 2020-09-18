@@ -31,16 +31,16 @@
     </squarespace:query>
 
     <squarespace:query collection="blog" limit="2" featured="true">
-            {.repeated section items}
+        {.repeated section items}
             <div class="article-preview" style="margin-top:58px;">
-                <span class="unimportant" id="unimportant-main"></span>
+                <span class="unimportant" id=`{id}`></span>
                 <a href="{fullUrl}"><h3 class="article-title">{title}</h3></a>
                 {excerpt}
 
                 <squarespace:script src="text.js" combo="false" />
                 <script>postmarkArticle('main', `{addedOn}`, `{categories}`)</script>
-                </div>
-            {.end}
+            </div>
+        {.end}
     </squarespace:query>
 
 
