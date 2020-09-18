@@ -21,7 +21,7 @@
     <squarespace:query collection="blog" limit="2" featured="true">
         <div>
     {.repeated section items}
-      <h2><a href="{fullUrl}">{title}</a></h2>
+      <h3><a href="{fullUrl}">{title}</a></h3>
     {.end}
         </div>
 
