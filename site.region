@@ -39,8 +39,8 @@
                 <squarespace:script src="text.js" combo="false" />
                 <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
             {.end}
-        <section>
-    </div>
+        <div>
+    </squarespace:query>
 
 
     <div class="footer">
