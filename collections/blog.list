@@ -3,6 +3,9 @@
 
 <div class="articles">
     {.section collection}
-        <h1>Latest {title}</h1>
+        <div class="page-introduction">
+            <h1>Latest {title}</h1>
+            <p>{description}</p>
+        </div>
     {.end}
 </div>
