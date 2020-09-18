@@ -39,7 +39,7 @@
                 <squarespace:script src="text.js" combo="false" />
                 <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
             {.end}
-        <div>
+        </div>
     </squarespace:query>
 
 
