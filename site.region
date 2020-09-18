@@ -43,9 +43,9 @@
 
                 <squarespace:script src="text.js" combo="false" />
                 <script>
-                    console.log(typeof `{tags}`)
+                    {#  console.log(typeof `{tags}`)  }
                     
-                    if (`{tags.includes('image-only')}` === true) {
+                    if (`{tags}` === 'image-only') {
                         document.getElementById('imagefor-{id}').style.display = 'block'
                         document.getElementById('excerptfor-{id}').style.display = 'none'
                     } else {
