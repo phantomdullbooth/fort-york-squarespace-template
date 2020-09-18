@@ -37,7 +37,9 @@
                 <a href="{fullUrl}"><h3 class="article-title">{title}</h3></a>
                 <div id="excerptfor-{id}">{excerpt}</div>
 
-                <div id="imagefor-{id}">{assetUrl}</div>
+                <div id="imagefor-{id}">
+                    <img src="{assetUrl}" alt="image for {title}" />
+                </div>
 
                 <squarespace:script src="text.js" combo="false" />
                 <script>
