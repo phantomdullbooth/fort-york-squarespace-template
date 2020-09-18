@@ -30,7 +30,7 @@
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" limit="1" featured="true">
+    <squarespace:query collection="blog" limit="1" featured="true" style="margin-top:58px;">
         <section>
             {.repeated section items}
                 <span id="unimportant" class="unimportant"></span>
