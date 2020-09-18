@@ -1,19 +1,10 @@
-<!-- ========== INDIVIDUAL BLOG POST ===========
-========== INDIVIDUAL BLOG POST =========== -->
+<!-- ========== INDIVIDUAL ARTICLE =========== -->
+<!-- ========== INDIVIDUAL ARTICLE =========== -->
 
 <div class="page-subpage">
 
     {.section item}
-        <div id="hero" class="hero hero--blog" style="background-image: url({assetUrl}); background-size: cover; background-color: "red";">
-            <div class="background-filter">
-                <div class="hero__container">
-                    <div>
-                        <p id="subpage__label--blog">Blog Post</p>
-                        <h1>{title}</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
+       <h1>Apples</h1>
 
         <article>
             {body}
