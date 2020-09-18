@@ -23,9 +23,8 @@
             {.repeated section items}
                 <span id="unimportant" class="unimportant"></span>
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
-            {.end}
 
-            <script>
+                <script>
                     console.log(`{item}`)
             
                 function postmarkArticle(publishedOn, mainCategory) {
@@ -42,6 +41,7 @@
     
                 postmarkArticle(`{item.addedOn}, {item.categories[0]}`)
             </script>
+            {.end}
         </div>
     </squarespace:query>
 
