@@ -4,7 +4,7 @@
 <div class="articles">
     {.section collection}
         <div class="page-introduction">
-            <h1>Latest {title}</h1>
+            <h1>{title}</h1>
             <p>{description}</p>
         </div>
     {.end}
