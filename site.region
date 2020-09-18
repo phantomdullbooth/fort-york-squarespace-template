@@ -26,7 +26,7 @@
             {.end}
 
             <script>
-                    console.log(`{item.addedOn}`)
+                    console.log(`{item}`)
             
                 function postmarkArticle(publishedOn, mainCategory) {
                     const basicInformation = document.getElementById('unimportant')
