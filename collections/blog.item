@@ -2,7 +2,19 @@
 <!-- ========== INDIVIDUAL ARTICLE =========== -->
 
 <article>
-    <h1>Apples</h1>
+    {.section item}
+    
+        <div class="article__header">
+            <span class="unimportant" id="{article__info--{id}}"></span>
+            <h3>{title}</h3>
+        </div>
+
+        <squarespace:script src="text.js" combo="false" />
+        <script>
+            postmarkArticle(`article__info--{id}`, `{addedOn}`, `{categories}`)
+        </script>
+
+    {.end}
 </article>
 
 
