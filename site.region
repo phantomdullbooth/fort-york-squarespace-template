@@ -21,7 +21,7 @@
     <squarespace:query collection="blog" limit="1" featured="true">
         <div>
             {.repeated section items}
-            <span class="date-category">Aug 15 —— Culture</span>
+            <span class="unimportant">Aug 15 —— Culture</span>
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
             {.end}
         </div>
