@@ -30,7 +30,7 @@
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" skip="3" limit="1" featured="true">
+    <squarespace:query collection="blog" limit="2" featured="true">
         <div>
             {.repeated section items}
                 <span id="unimportant" class="unimportant"></span>
@@ -42,7 +42,7 @@
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" limit="2">
+    <squarespace:query collection="blog" skip="2" limit="2">
         {.repeated section items}
             <div style="margin-top:58px;" class="sneakpeek" id="sneakpeek--{id}" >
                 <span class="unimportant" id="sneakpeek__info--{id}"></span>
