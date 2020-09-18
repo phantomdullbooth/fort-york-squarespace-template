@@ -32,28 +32,30 @@
 
     <squarespace:query collection="blog" limit="2">
         {.repeated section items}
-            <div class="article-preview" id="article-{id}" style="margin-top:58px;">
-                <span class="unimportant" id="preview-{id}"></span>
-                <a href="{fullUrl}"><h3 class="article-title">{title}</h3></a>
-                <div id="excerptfor-{id}">{excerpt}</div>
+            <div style="margin-top:58px;" class="sneakpeek" id="sneakpeek--{id}" >
+                <span class="unimportant" id="sneakpeek__info--{id}"></span>
+                <a href="{fullUrl}"><h3 class="sneakpeek__title">{title}</h3></a>
 
-                <div id="imagefor-{id}">
-                    <img src="{assetUrl}" alt="image for {title}" class="preview__image" />
+                <div id="excerpt--{id}">{excerpt}</div>
+                <div id="graphic--{id}">
+                    <img src="{assetUrl}" class="sneakpeek__image" alt="{title} graphic" />
                 </div>
-
+            
                 <squarespace:script src="text.js" combo="false" />
+                
+
+
+                
                 <script>
-                    {#  console.log(typeof `{tags}`)  }
-                    
+                    postmarkArticle(`sneakpeek__info--{id}`, `{addedOn}`, `{categories}`)
+
                     if (`{tags}` === 'image-only') {
-                        document.getElementById('imagefor-{id}').style.display = 'block'
-                        document.getElementById('excerptfor-{id}').style.display = 'none'
+                        document.getElementById('graphic--{id}').style.display = 'block'
+                        document.getElementById('excerpt--{id}').style.display = 'none'
                     } else {
-                        document.getElementById('excerptfor-{id}').style.display = 'block'
+                        document.getElementById('graphic--{id}').style.display = 'block'
                         document.getElementById('imagefor-{id}').style.display = 'none'
                     }
-
-                    postmarkArticle(`preview-{id}`, `{addedOn}`, `{categories}`)
                 </script>
             </div>
         {.end}
