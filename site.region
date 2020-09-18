@@ -33,12 +33,12 @@
     <squarespace:query collection="blog" limit="2" featured="true">
         {.repeated section items}
             <div class="article-preview" style="margin-top:58px;">
-                <span class="unimportant" id=`{id}`></span>
+                <span class="unimportant" id="preview-{id}"></span>
                 <a href="{fullUrl}"><h3 class="article-title">{title}</h3></a>
                 {excerpt}
 
                 <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle(`{id}`, `{addedOn}`, `{categories}`)</script>
+                <script>postmarkArticle(`preview-{id}`, `{addedOn}`, `{categories}`)</script>
             </div>
         {.end}
     </squarespace:query>
