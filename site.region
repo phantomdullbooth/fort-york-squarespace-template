@@ -21,8 +21,10 @@
     <squarespace:query collection="blog" limit="1" featured="true">
         <div>
             {.repeated section items}
-            <span class="unimportant">Aug 15 —— Culture</span>
+            <span id="unimportant" class="unimportant">Aug 15 —— Culture</span>
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
+
+                <script>postmarkArticle(`{item.addedOn}, {item.categories[0]}`)</script>
             {.end}
         </div>
     </squarespace:query>
@@ -42,3 +44,34 @@
 
   </body>
 </html>
+
+<script>
+    function postmarkArticle(publishedOn, mainCategory) {
+        const basicInformation = document.getElementById('unimportant')
+        const categories = []
+        const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
+        const publishedDate = new Date(parseInt(publishedOn))
+        
+
+        let month = months[publishedDate.getMonth()]
+        let date = publishedDate.getDate()
+
+        basicInformation.innerHTML = month + ' ' + date + ' —— ' + 
+
+        if (month === "December" && date === 25) {
+            blogGreeting.innerHTML = "Merry Christmas!"
+        } else if (month === "January" && date === 1) {
+            blogGreeting.innerHTML = "Happy New Year!"
+        } else if (month === "July" && date === 4) {
+            blogGreeting.innerHTML = "Happy 4th of July!"
+        } else if (day === "Friday") {
+            blogGreeting.innerHTML = "Thank God it's Friday!"
+        } else if (hour >= 6 && hour < 12) {
+            blogGreeting.innerHTML = "good morning."
+        } else if (hour >= 12 && hour < 17) {
+            blogGreeting.innerHTML = "good afternoon."
+        } else {
+            blogGreeting.innerHTML = "good evening."
+        }
+    }
+</script>
