@@ -25,7 +25,7 @@
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
 
                 <script>
-                    console.log(`{item}`)
+                    console.log(`{addedOn}`)
             
                 function postmarkArticle(publishedOn, mainCategory) {
                     const basicInformation = document.getElementById('unimportant')
