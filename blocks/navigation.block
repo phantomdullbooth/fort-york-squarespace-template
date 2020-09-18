@@ -1,0 +1,7 @@
+<nav class="nav--main">
+    <span class="minor">Look around</span>
+    
+    {.section collection}
+        <h4><a href="{url}" class="{.section active} active-link{.end}">{navigationTitle}</a></h4>
+    {.end}
+</nav>
