@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <squarespace:query collection="blog" limit="1" featured="true">
+    <squarespace:query collection="blog" skip="2" limit="1" featured="true">
         <div>
             {.repeated section items}
                 <span id="unimportant" class="unimportant"></span>
