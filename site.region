@@ -38,7 +38,7 @@
                 <div id="excerptfor-{id}">{excerpt}</div>
 
                 <div id="imagefor-{id}">
-                    <img src="{assetUrl}" alt="image for {title}" />
+                    <img src="{assetUrl}" alt="image for {title}" class="preview__image" />
                 </div>
 
                 <squarespace:script src="text.js" combo="false" />
