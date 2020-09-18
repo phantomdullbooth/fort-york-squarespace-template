@@ -28,10 +28,10 @@
         <squarespace:navigation navigationId="socialnav" template="socialnav" />
         <squarespace:navigation navigationId="navigation" template="navigation" />
 
-        <div class="search">
+        {#  <div class="search">
             <div class="search__cursor"></div>
             <squarespace:block-field id="search--sitewide" columns="1" />
-        </div>
+        </div>  }
     </div>
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
