@@ -25,19 +25,19 @@
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
 
                 <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
+                <script>postmarkArticle('feature', `{addedOn}`, `{categories}`)</script>
             {.end}
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" limit="1" featured="true">
+    <squarespace:query collection="blog" limit="2" featured="true">
         <div class="article-preview" style="margin-top:58px;">
             {.repeated section items}
-                <span id="unimportant" class="unimportant"></span>
+                <span class="unimportant" id="unimportant-main"></span>
                 <a href="{fullUrl}"><h3>{title}</h3></a>
 
                 <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
+                <script>postmarkArticle('main', `{addedOn}`, `{categories}`)</script>
             {.end}
         </div>
     </squarespace:query>
