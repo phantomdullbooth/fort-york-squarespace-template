@@ -13,6 +13,10 @@
             <img src="{assetUrl}" alt="{title} graphic" />
         </div>
 
+        <div class="article__text">
+            {body}
+        </div>
+
         <squarespace:script src="text.js" combo="false" />
         <script>
             postmarkArticle(`article__info--{id}`, `{addedOn}`, `{categories}`)
