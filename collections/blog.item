@@ -2,12 +2,12 @@
 <!-- ========== INDIVIDUAL ARTICLE =========== -->
 
 <article>
-<h1>Apples</h1>
+    <h1>Apples</h1>
 </article>
 
 
 
-<div class="page-subpage">
+{#  <div class="page-subpage">
 
     {.section item}
        <h1>Apples</h1>
@@ -16,4 +16,4 @@
             {body}
         </article>
     {.end}
-<div>
+<div>  }
