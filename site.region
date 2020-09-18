@@ -50,8 +50,8 @@
                         document.getElementById('graphic--{id}').style.display = 'block'
                         document.getElementById('excerpt--{id}').style.display = 'none'
                     } else {
-                        document.getElementById('graphic--{id}').style.display = 'block'
-                        document.getElementById('imagefor-{id}').style.display = 'none'
+                        document.getElementById('graphic--{id}').style.display = 'none'
+                        document.getElementById('imagefor-{id}').style.display = 'block'
                     }
                 </script>
             </div>
