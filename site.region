@@ -63,6 +63,8 @@
         {.end}
     </squarespace:query>
 
+    {squarespace.main-content}
+
 
     <div class="footer">
         <squarespace:navigation navigationId="socialnav" template="socialnav" />
