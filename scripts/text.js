@@ -8,3 +8,13 @@ function postmarkArticle(location, publishedOn, mainCategory) {
 
     postmarkLocation.innerHTML = month + ' ' + date + ' —— ' + mainCategory
 }
+
+function renderSneakpeek(articleType, graphicBox, excerptBox) {
+    if (articleType === 'image-only') {
+        document.getElementById(graphicBox).style.display = 'block'
+        document.getElementById(excerptBox).style.display = 'none'
+    } else {
+        document.getElementById(excerptBox).style.display = 'block'
+        document.getElementById(graphicBox).style.display = 'none'
+    }
+}

@@ -57,14 +57,7 @@
                 
                 <script>
                     postmarkArticle(`sneakpeek__info--{id}`, `{addedOn}`, `{categories}`)
-
-                    if (`{tags}` === 'image-only') {
-                        document.getElementById('graphic--{id}').style.display = 'block'
-                        document.getElementById('excerpt--{id}').style.display = 'none'
-                    } else {
-                        document.getElementById('graphic--{id}').style.display = 'none'
-                        document.getElementById('imagefor-{id}').style.display = 'block'
-                    }
+                    renderSneakpeek(`{tags}`, `graphic--{id}`, `excerpt--{id}`)
                 </script>
             </div>
         {.end}
