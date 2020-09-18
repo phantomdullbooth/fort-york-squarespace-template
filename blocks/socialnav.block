@@ -1,10 +1,10 @@
 <nav class="nav--social">
-    <h1>Follow us</h1>
-
+    <span class="minor">Follow us</span>
+    
     {.repeated section items}
         {.section externalLink}
-            <h1><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h1>
+            <h4><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h4>
         {.end}
-
     {.end}
+    
 </nav>
