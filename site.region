@@ -9,16 +9,18 @@
   </head>
 
   <body>
-  <div class="header">
-    <h2>Fort York</h2>
+    <div class="header">
+        <h2>Fort York</h2>
 
-    <div class="nav-icon">
-        <div class="nav-icon--top"></div>
-        <div class="nav-icon--bottom"></div>
+        <div class="nav-icon">
+            <div class="nav-icon--top"></div>
+            <div class="nav-icon--bottom"></div>
+        </div>
     </div>
-  </div>
 
-  <squarespace:block-field id="primary-feature" columns="1" />
+    <squarespace:query collection="blog" limit="2" featured="true">
+
+    </squarespace:query>
 
 
     <div class="footer">
