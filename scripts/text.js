@@ -10,7 +10,7 @@ function postmarkArticle(location, publishedOn, mainCategory) {
 }
 
 function renderSneakpeek(articleType, graphicBox, excerptBox) {
-    if (articleType === 'image-only') {
+    if (articleType === 'image-focus') {
         document.getElementById(graphicBox).style.display = 'block'
         document.getElementById(excerptBox).style.display = 'none'
     } else {
