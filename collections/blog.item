@@ -16,16 +16,3 @@
 
     {.end}
 </article>
-
-
-
-{#  <div class="page-subpage">
-
-    {.section item}
-       <h1>Apples</h1>
-
-        <article>
-            {body}
-        </article>
-    {.end}
-<div>  }
