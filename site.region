@@ -32,13 +32,22 @@
 
     <squarespace:query collection="blog" limit="2">
         {.repeated section items}
-            <div class="article-preview" style="margin-top:58px;">
+            <div class="article-preview" id="article-{id}" style="margin-top:58px;">
                 <span class="unimportant" id="preview-{id}"></span>
                 <a href="{fullUrl}"><h3 class="article-title">{title}</h3></a>
                 {excerpt}
 
                 <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle(`preview-{id}`, `{addedOn}`, `{categories}`)</script>
+                <script>
+                if (`{tags.includes('image-only')}` === true) {
+                    document.getElementById('article-{id}').getElementsByTagName('P')[0].style.display = 'none'
+                } else {
+                    document.getElementById('article-{id}').getElementsByTagName('P')[0].style.display = 'block'
+                }
+                
+                
+                postmarkArticle(`preview-{id}`, `{addedOn}`, `{categories}`)
+                </script>
             </div>
         {.end}
     </squarespace:query>
