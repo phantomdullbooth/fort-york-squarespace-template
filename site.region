@@ -18,7 +18,7 @@
         </div>
     </div>
 
-    <squarespace:query collection="blog" limit="2" featured="true">
+    <squarespace:query collection="blog" limit="1" featured="true">
         <div>
             {.repeated section items}
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
