@@ -31,7 +31,7 @@
     </squarespace:query>
 
     <squarespace:query collection="blog" limit="1" featured="true">
-        <section style="margin-top:58px;">
+        <div class="article-preview" style="margin-top:58px;">
             {.repeated section items}
                 <span id="unimportant" class="unimportant"></span>
                 <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
@@ -40,7 +40,7 @@
                 <script>postmarkArticle(`{addedOn}`, `{categories}`)</script>
             {.end}
         <section>
-    </squarespace:query>
+    </div>
 
 
     <div class="footer">
