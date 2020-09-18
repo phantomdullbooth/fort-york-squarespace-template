@@ -30,7 +30,7 @@
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" limit="2" featured="true">
+    <squarespace:query collection="blog" limit="2">
         {.repeated section items}
             <div class="article-preview" style="margin-top:58px;">
                 <span class="unimportant" id="preview-{id}"></span>
