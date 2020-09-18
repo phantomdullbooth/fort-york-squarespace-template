@@ -43,9 +43,6 @@
             
                 <squarespace:script src="text.js" combo="false" />
                 
-
-
-                
                 <script>
                     postmarkArticle(`sneakpeek__info--{id}`, `{addedOn}`, `{categories}`)
 
