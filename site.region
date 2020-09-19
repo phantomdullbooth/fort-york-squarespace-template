@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header id="header">
+    <div id="header">
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
@@ -19,7 +19,7 @@
                 <div class="nav-icon--bottom"></div>
             </div>
         </div>
-    </header>
+    </div>
 
     <div id="navigation-menu">
         <squarespace:navigation navigationId="navigation" template="navigation" />
@@ -46,9 +46,9 @@
 
 <squarespace:script src="style.js" combo="false" />
 <script>
-    document.getElementById("nav-icon").addEventListener("click", (event) => {
+    document.getElementById("nav-icon").addEventListener("click", () => {
+        console.log('what')
         toggleNavigation()
-        event.preventDefault();
     })
 </script>
 
