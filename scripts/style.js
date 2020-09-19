@@ -9,13 +9,13 @@ function colorHeaderElements(navigationOpen) {
 }
 
 function toggleNavigation() {
-    const navigationMenu = document.getElementById("navigation-menu")
+    const menu = document.getElementById("menu")
 
-    if (navigationMenu.style.display === 'none') {
+    if (menu.style.display === 'none') {
         colorHeaderElements(true)
-        navigationMenu.style.display = 'block'
+        menu.style.display = 'block'
     } else {
         colorHeaderElements(false)
-        navigationMenu.style.display = 'none'
+        menu.style.display = 'none'
     }
 }
