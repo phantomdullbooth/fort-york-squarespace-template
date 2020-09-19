@@ -41,7 +41,7 @@ function determinePreviewType(previewType, excerptId, imageId) {
 // 
 
 {/* 
-
+printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)          
     <squarespace:query collection="blog" limit="2" featured="true">
         <div>
             {.repeated section items}

@@ -30,7 +30,7 @@
         {.repeated section items}
             <div class="preview" style="margin-top:85px;">
                 <div class="background">
-                    <span class="metadata" id="metadata--{id}"></span>
+                    <span class="metadata">{addedOn|date %b %e}</span>
                     <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
                 </div>
 
@@ -43,7 +43,7 @@
             <squarespace:script src="text.js" combo="false" />
             <script>
                 determinePreviewType(`{tags}`, `image--{id}`, `excerpt--{id}`)
-                printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)                    
+                          
             </script>
         {.end}
     </squarespace:query>
