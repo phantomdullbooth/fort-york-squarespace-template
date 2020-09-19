@@ -1,9 +1,9 @@
 // --------------- RETURNS DATE AND CATEGORIES --------------- //
 // --------------- RETURNS DATE AND CATEGORIES --------------- //
 
-function printMetadata(metadataId, addedOn, categories) {
-    const addedOn = new Date(parseInt(addedOn))
-    const metadataId = document.getElementById(metadataId)
+function printMetadata(requestingId, dateAdded, categories) {
+    const addedOn = new Date(parseInt(dateAdded))
+    const metadataId = document.getElementById(requestingId)
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
 
     let month = months[addedOn.getMonth()]
