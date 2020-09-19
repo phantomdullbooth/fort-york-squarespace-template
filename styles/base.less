@@ -114,8 +114,10 @@ body {
         justify-content: space-between;
         margin: auto;
         .margins();
-        width: calc(~"100% - @pageMargin");
+        width: calc(100% ~"-" @pageMargin ~"+" @pageMargin);
     }
+
+   
 
     h2 {
         color: #D8D8D8;
