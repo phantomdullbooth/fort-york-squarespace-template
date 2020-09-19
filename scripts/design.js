@@ -11,11 +11,11 @@ function styleHeader(isMenuOpens) {
 function toggleMenu() {
     const menu = document.getElementById("menu")
 
-    if (menu.style.display === "none") {
-        menu.style.display = "block"
-        styleHeader(true)
-    } else {
+    if (menu.style.display === "block") {
         menu.style.display = "none"
         styleHeader(false)
+    } else {
+        menu.style.display = "block"
+        styleHeader(true)
     }
 }
