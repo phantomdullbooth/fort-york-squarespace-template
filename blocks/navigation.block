@@ -1,6 +1,4 @@
-<nav class="nav--main">
-    {#  <span class="minor">Look around</span>  }
-
+<nav>
     {.repeated section items}
         {.section collection}
             <span class="navigation__item">

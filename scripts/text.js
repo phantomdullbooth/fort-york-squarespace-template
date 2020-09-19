@@ -23,17 +23,7 @@ function renderSneakpeek(articleType, graphicBox, excerptBox) {
 
 // 
 
-{/* <squarespace:query collection="blog" skip="2" limit="1" featured="true">
-        <div>
-            {.repeated section items}
-                <span id="unimportant" class="unimportant"></span>
-                <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
-
-                <squarespace:script src="text.js" combo="false" />
-                <script>postmarkArticle('feature', `{addedOn}`, `{categories}`)</script>
-            {.end}
-        </div>
-    </squarespace:query>
+{/* 
 
     <squarespace:query collection="blog" limit="2" featured="true">
         <div>

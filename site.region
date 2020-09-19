@@ -28,6 +28,18 @@
 
     <main role="main" data-content-field="main-content">{squarespace.main-content}</main>
 
+    <squarespace:query collection="reads" skip="2" limit="1" featured="true">
+        <div>
+            {.repeated section items}
+                <span id="unimportant" class="unimportant"></span>
+                <a href="{fullUrl}"><h3 class="no-underline">{title}</h3></a>
+
+                <squarespace:script src="text.js" combo="false" />
+                <script>postmarkArticle('feature', `{addedOn}`, `{categories}`)</script>
+            {.end}
+        </div>
+    </squarespace:query>
+
 
     <div class="footer">
         <squarespace:navigation navigationId="socialnav" template="socialnav" />
@@ -47,7 +59,7 @@
 
 <squarespace:script src="design.js" combo="false" />
 <script>
-    navigationToggle.addEventListener("click", () => {
+    navigationToggle.addEventListener('click', () => {
         toggleNavigation()
     })
 </script>
