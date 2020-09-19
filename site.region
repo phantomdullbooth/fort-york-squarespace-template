@@ -31,7 +31,7 @@
             <div class="preview" style="margin-top:85px;">
                 <div class="background">
                     <span class="metadata" id="metadata--{id}"></span>
-                    <h3 data-content-field="title" class="no-underline">{title}</h3>
+                    <h3 data-content-field="title">{title}</h3>
                 </div>
 
                 <div id="excerpt--{id}">{excerpt}</div>
