@@ -6,10 +6,10 @@
                     <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
                 </div>
 
-
+<img src="{assetUrl}" alt="{title}">
             </div>
 
-            <img src="{assetUrl}" alt="{title}">
+            
         {.end}
     </div>
 </squarespace:query>
