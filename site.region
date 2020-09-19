@@ -48,7 +48,7 @@
 <script>
     document.getElementById("nav-icon").addEventListener("click", () => {
         console.log('what')
-        toggleNavigation()
+        {#  toggleNavigation()  }
     })
 </script>
 
