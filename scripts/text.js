@@ -15,3 +15,6 @@ function determinePreviewType(previewType, excerptId, imageId) {
         image.style.display = 'block'
     }
 }
+
+
+// {#  <img src="{assetUrl}" alt="{title}">  }
