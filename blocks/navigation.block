@@ -1,8 +1,0 @@
-{#  ----------------- LINKS TO INTERNAL PAGES -----------------  }
-{#  ----------------- LINKS TO INTERNAL PAGES -----------------  }
-
-<nav>
-    {.repeated section items}
-        <a href="{fullUrl}">{collection.navigationTitle}</a>
-    {.end}
-</nav>

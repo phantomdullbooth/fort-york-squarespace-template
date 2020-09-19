@@ -3,6 +3,8 @@
 
 <nav>
     {.repeated section items}
-        <a href="{fullUrl}">{collection.navigationTitle}</a>
+        {.section collection}
+            <a href="{fullUrl}">{navigationTitle}</a>
+        {.end}
     {.end}
 </nav>
