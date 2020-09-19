@@ -29,27 +29,21 @@
     <squarespace:query collection="reads" skip="2" limit="2">
         {.repeated section items}
             <div class="preview" style="margin-top:85px;">
-
-
-
-
-
-
-        
-            <div style="margin-top:58px;" class="sneakpeek" id="sneakpeek--{id}" >
-                <span class="unimportant" id="sneakpeek__info--{id}"></span>
-                <a href="{fullUrl}"><h3 class="sneakpeek__title">{title}</h3></a>
+                <div class="background">
+                    <span class="metadata" id="metadata--{id}"></span>
+                    <h3 data-content-field="title" class="no-underline">{title}</h3>
+                </div>
 
                 <div id="excerpt--{id}">{excerpt}</div>
-                <div id="graphic--{id}">
-                    <img src="{assetUrl}" class="sneakpeek__image" alt="{title} graphic" />
+                <div class="image-container image-height--medium" id="image--{id}">
+                    <img src="{assetUrl}" class="preview__image" alt="{title}" />
                 </div>
+            </div>
             
                 <squarespace:script src="text.js" combo="false" />
-                
                 <script>
-                    postmarkArticle(`sneakpeek__info--{id}`, `{addedOn}`, `{categories}`)
-                    renderSneakpeek(`{tags}`, `graphic--{id}`, `excerpt--{id}`)
+                    determinePreviewType(`{tags}`, `graphic--{id}`, `excerpt--{id}`)
+                    printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)                    
                 </script>
             </div>
         {.end}
