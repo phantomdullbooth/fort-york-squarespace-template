@@ -4,7 +4,7 @@
 <div>
     {.section item}
         <div class="background">
-            <span class="metadata" id="metadata--{id}"></span>
+            <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
             <h3 data-content-field="title" class="no-underline">{title}</h3>
         </div>
 

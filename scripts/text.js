@@ -1,18 +1,3 @@
-// --------------- RETURNS DATE AND CATEGORIES --------------- //
-// --------------- RETURNS DATE AND CATEGORIES --------------- //
-
-function printMetadata(requestingId, dateAdded, categories) {
-    const addedOn = new Date(parseInt(dateAdded))
-    const metadataId = document.getElementById(requestingId)
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
-
-    let month = months[addedOn.getMonth()]
-    let date = addedOn.getDate()
-
-    metadataId.innerHTML = month + ' ' + date + '——' + categories
-}
-
-
 // --------------- DETERMINES PREVIEW TYPE --------------- //
 // --------------- DETERMINES PREVIEW TYPE --------------- //
 
@@ -40,8 +25,7 @@ function determinePreviewType(previewType, excerptId, imageId) {
 
 // 
 
-{/* 
-printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)          
+{/*     
     <squarespace:query collection="blog" limit="2" featured="true">
         <div>
             {.repeated section items}
