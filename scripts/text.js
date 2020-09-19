@@ -9,8 +9,27 @@ function printMetadata(requestingId, dateAdded, categories) {
     let month = months[addedOn.getMonth()]
     let date = addedOn.getDate()
 
-    metadataId.innerHTML = month + ' ' + date + ' —— ' + categories
+    metadataId.innerHTML = month + ' ' + date + '——' + categories
 }
+
+// --------------- DETERMINES PREVIEW TYPE --------------- //
+// --------------- DETERMINES PREVIEW TYPE --------------- //
+
+function determinePreviewType(previewType) {
+    if (previewType === 'preview--immersive') {
+
+    } else if (previewType === 'preview--text') {
+
+    } else if (previewType === 'preview--image') {
+
+    }
+}
+
+
+
+
+
+
 
 function renderSneakpeek(articleType, graphicBox, excerptBox) {
     if (articleType === 'image-focus') {
@@ -52,26 +71,7 @@ function renderSneakpeek(articleType, graphicBox, excerptBox) {
         </div>
     </squarespace:query>
 
-    <squarespace:query collection="blog" skip="2" limit="2">
-        {.repeated section items}
-            <div style="margin-top:58px;" class="sneakpeek" id="sneakpeek--{id}" >
-                <span class="unimportant" id="sneakpeek__info--{id}"></span>
-                <a href="{fullUrl}"><h3 class="sneakpeek__title">{title}</h3></a>
-
-                <div id="excerpt--{id}">{excerpt}</div>
-                <div id="graphic--{id}">
-                    <img src="{assetUrl}" class="sneakpeek__image" alt="{title} graphic" />
-                </div>
-            
-                <squarespace:script src="text.js" combo="false" />
-                
-                <script>
-                    postmarkArticle(`sneakpeek__info--{id}`, `{addedOn}`, `{categories}`)
-                    renderSneakpeek(`{tags}`, `graphic--{id}`, `excerpt--{id}`)
-                </script>
-            </div>
-        {.end}
-    </squarespace:query> */}
+     */}
 
 
 {/* <div class="page page--blogs">
