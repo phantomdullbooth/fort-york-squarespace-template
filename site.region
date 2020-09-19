@@ -42,7 +42,7 @@
   </body>
 </html>
 
-<squarespace:script src="design.js" combo="true" />
+<squarespace:script src="design.js" combo="false" />
 <script>
     document.getElementById("menu-toggle").addEventListener("click", () => {
         toggleMenu()
