@@ -42,7 +42,7 @@
             
                 <squarespace:script src="text.js" combo="false" />
                 <script>
-                    determinePreviewType(`{tags}`, `graphic--{id}`, `excerpt--{id}`)
+                    determinePreviewType(`{tags}`, `image--{id}`, `excerpt--{id}`)
                     printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)                    
                 </script>
             </div>
