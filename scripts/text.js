@@ -26,7 +26,8 @@ function determinePreviewType(previewType, excerptId, imageId) {
         excerpt.style.display = 'block'
         image.style.display = 'none'
     } else if (previewType === 'preview--image') {
-
+        excerpt.style.display = 'none'
+        image.style.display = 'block'
     }
 }
 
