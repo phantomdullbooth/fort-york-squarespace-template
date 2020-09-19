@@ -48,8 +48,8 @@
 <script>
     document.getElementById("menu-toggle").addEventListener("click", event => {
         console.log('what')
-        event.stopPropagation()
         toggleNavigation()
+        event.stopPropagation()
     })
 </script>
 
