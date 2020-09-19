@@ -1,4 +1,4 @@
-<nav class="nav--social">
+<nav>
     <span class="minor">Follow us</span>
     
     {.repeated section items}
