@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div id="header">
+    <header id="header">
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
@@ -19,7 +19,7 @@
                 <div class="nav-icon--bottom"></div>
             </div>
         </div>
-    </div>
+    </header>
 
     <div id="navigation-menu">
         <squarespace:navigation navigationId="navigation" template="navigation" />
