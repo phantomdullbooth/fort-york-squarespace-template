@@ -5,7 +5,7 @@ function colorHeaderElements(navigationOpen) {
     if (navigationOpen === true) {
        headerBackground.style.backgroundColor = '#000000'
     } else {
-        headerBackground.style.backgroundColor = 'none'
+        headerBackground.style.backgroundColor = 'transparent'
     }
 }
 
