@@ -15,14 +15,16 @@
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
-            <div id="menu-toggle">
+            <div id="navigation-toggle">
                 <div></div>
                 <div></div>
             </div>
         </div>
     </div>
 
-    <div id="menu"><squarespace:navigation navigationId="navigation" template="navigation" /></div>
+    <div id="navigation">
+        <squarespace:navigation navigationId="navigation" template="navigation" />
+    </div>
 
     <main role="main" data-content-field="main-content">{squarespace.main-content}</main>
 
@@ -45,7 +47,7 @@
 
 <squarespace:script src="design.js" combo="false" />
 <script>
-    document.getElementById("menu-toggle").addEventListener("click", () => {
-        toggleMenu()
+    navigationToggle.addEventListener("click", () => {
+        toggleNavigation()
     })
 </script>
