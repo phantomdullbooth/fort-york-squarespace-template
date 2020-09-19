@@ -194,26 +194,31 @@ main {
     margin-top: calc(@headerHeight ~"+" 25px);
 }
 
-#nav-icon {
+
+#menu-toggle {
     align-items: flex-end;
     display: flex;
     flex-direction: column;
+
+    div {
+        background-color: #D8D8D8;
+        height: 6px;
+    }
+
+    div:nth-of-type(1) {
+        margin-bottom: 5px;
+        width: 60px;
+    }
+
+    div:nth-of-type(2) {
+        width: 90px;
+    }
 }
 
-.nav-icon--bottom,
-.nav-icon--top {
-    background-color: #D8D8D8;
-    height: 6px;
-}
 
-.nav-icon--bottom {
-    width: 90px;
-}
 
-.nav-icon--top {
-    margin-bottom: 5px;
-    width: 60px;
-}
+
+
 
 nav {
     .margins();

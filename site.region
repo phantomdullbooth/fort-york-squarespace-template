@@ -14,9 +14,9 @@
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
-            <div id="nav-icon" onclick="toggleNavigation()">
-                <div class="nav-icon--top"></div>
-                <div class="nav-icon--bottom"></div>
+            <div id="menu-toggle" onclick="toggleNavigation()">
+                <div></div>
+                <div></div>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
 
 <squarespace:script src="style.js" combo="false" />
 <script>
-    document.getElementById("nav-icon").addEventListener("click", () => {
+    document.getElementById("menu-toggle").addEventListener("click", () => {
         console.log('what')
         {#  toggleNavigation()  }
     })
