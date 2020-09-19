@@ -5,7 +5,7 @@
     {.section collection}
         <div class="page-introduction">
             <h1 data-content-field="title">{title}</h1>
-            <p>{description}</p>
+            {description}
         </div>
     {.end}
 </div>
