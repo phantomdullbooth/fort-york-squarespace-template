@@ -3,7 +3,9 @@
 
     {.repeated section items}
         {.section collection}
-            <h4><a href="{fullUrl}">{navigationTitle}</a></h4>
+            <span class="navigation__item">
+                <a href="{fullUrl}">{navigationTitle}</a>
+            </span>
         {.end}
     {.end}
 

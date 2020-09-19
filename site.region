@@ -21,7 +21,9 @@
         </div>
     </div>
 
-    <div id="navigation-menu"></div>
+    <div id="navigation-menu">
+        <squarespace:navigation navigationId="navigation" template="navigation" />
+    </div>
 
     <squarespace:script src="style.js" combo="false" />
     <script>
