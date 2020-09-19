@@ -3,7 +3,7 @@
     
     {.repeated section items}
         {.section externalLink}
-            <h4><a href="{url}"{.section newWindow} target="_blank"{.end} data-content-field="title">{title}</a></h4>
+            <h4><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h4>
         {.end}
     {.end}
 </nav>

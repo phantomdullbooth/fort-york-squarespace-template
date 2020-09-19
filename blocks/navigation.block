@@ -3,7 +3,7 @@
 
     {.repeated section items}
         {.section collection}
-            <h4><a href="{url}" class="{.section active} active-link{.end}" data-content-field="title">{navigationTitle}</a></h4>
+            <h4><a href="{url}" class="{.section active} active-link{.end}">{navigationTitle}</a></h4>
         {.end}
     {.end}
     
