@@ -46,9 +46,7 @@
 
 <squarespace:script src="style.js" combo="false" />
 <script>
-    const navIcon = document.getElementById("nav-icon")
-
-    navIcon.addEventListener("click", () => {
+    document.getElementById("nav-icon").addEventListener("click", () => {
         toggleNavigation()
     })
 </script>
