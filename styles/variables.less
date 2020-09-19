@@ -2,9 +2,12 @@
 
 @default: -apple-system, BlinkMacSystemFont, 'Basier Square', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
-.margins {
-    margin-left: 18px;
-    margin-right: 18px;
-}
 
-@height: 60px;
+@headerHeight: 60px;
+@pageMargin: 18px;
+
+
+.margins {
+    margin-left: @pageMargin;
+    margin-right: @pageMargin;
+}
