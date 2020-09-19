@@ -1,0 +1,23 @@
+    <squarespace:query collection="reads" skip="2" limit="2">
+        {.repeated section items}
+            <div class="preview" style="margin-top:85px;">
+                <div class="background">
+                    <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
+                    <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
+                </div>
+
+                <div class="preview__excerpt" id="excerpt--{id}">{excerpt}</div>
+                <div class="preview__image image-height--medium" id="image--{id}">
+                    <img src="{assetUrl}" alt="{title}" />
+                </div>
+            </div>
+            
+            <squarespace:script src="text.js" combo="false" />
+            <script>
+                determinePreviewType(`{tags}`, `image--{id}`, `excerpt--{id}`)
+                          
+            </script>
+        {.end}
+    </squarespace:query>
+
+    <main role="main" data-content-field="main-content">{squarespace.main-content}</main>

@@ -1,0 +1,15 @@
+<div class="footer">
+</div>
+
+    <!--Injection point for tracking scripts and user content from the code injection tab.-->
+    {squarespace-footers}
+
+  </body>
+</html>
+
+<squarespace:script src="design.js" combo="false" />
+<script>
+    navigationToggle.addEventListener('click', () => {
+        toggleNavigation()
+    })
+</script>
