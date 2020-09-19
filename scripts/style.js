@@ -10,9 +10,9 @@ function colorHeaderElements(navigationOpen) {
 }
 
 function toggleNavigation() {
-    if (headerBackground.style.backgroundColor !== '#000000') {
+    if (headerBackground.style.backgroundColor === 'transparent') {
         colorHeaderElements(true)
     } else {
-        colorHeaderElements(true)
+        colorHeaderElements(false)
     }
 }
