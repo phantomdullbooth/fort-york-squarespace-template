@@ -1,10 +1,10 @@
-const headerBackground = document.getElementById("header")
+const header = document.getElementById("header")
 
 function colorHeaderElements(navigationOpen) {
     if (navigationOpen === true) {
-       headerBackground.style.backgroundColor = '#000000'
+        header.style.backgroundColor = '#000000'
     } else {
-        headerBackground.style.backgroundColor = 'transparent'
+        header.style.backgroundColor = 'transparent'
     }
 }
 
