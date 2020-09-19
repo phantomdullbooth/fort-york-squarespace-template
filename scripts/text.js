@@ -12,6 +12,7 @@ function printMetadata(requestingId, dateAdded, categories) {
     metadataId.innerHTML = month + ' ' + date + '——' + categories
 }
 
+
 // --------------- DETERMINES PREVIEW TYPE --------------- //
 // --------------- DETERMINES PREVIEW TYPE --------------- //
 

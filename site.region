@@ -28,6 +28,14 @@
 
     <squarespace:query collection="reads" skip="2" limit="2">
         {.repeated section items}
+            <div class="preview" style="margin-top:85px;">
+
+
+
+
+
+
+        
             <div style="margin-top:58px;" class="sneakpeek" id="sneakpeek--{id}" >
                 <span class="unimportant" id="sneakpeek__info--{id}"></span>
                 <a href="{fullUrl}"><h3 class="sneakpeek__title">{title}</h3></a>
