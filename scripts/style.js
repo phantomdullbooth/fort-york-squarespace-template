@@ -1,26 +1,21 @@
-const header = document.getElementById("header")
+function styleHeader(isMenuOpens) {
+    const header = document.getElementById("header")
 
-function colorHeaderElements(navigationOpen) {
-    if (navigationOpen === true) {
-        header.style.backgroundColor = '#000000'
+    if (isMenuOpens === true) {
+        header.style.backgroundColor = "#000000"
     } else {
-        header.style.backgroundColor = 'transparent'
+        header.style.backgroundColor = "transparent"
     }
 }
 
 function toggleMenu() {
     const menu = document.getElementById("menu")
 
-    if (menu.style.display === 'none') {
-        colorHeaderElements(true)
-        menu.style.display = 'block'
-    } else if (menu.style.display === 'block') {
-        colorHeaderElements(false)
-        menu.style.display = 'none'
+    if (menu.style.display === "none") {
+        menu.style.display = "block"
+        styleHeader(true)
+    } else {
+        menu.style.display = "none"
+        styleHeader(false)
     }
 }
-
-// document.getElementById("menu-toggle").addEventListener("click", function() => {
-//     console.log('what')
-//     toggleMenu()
-// })
