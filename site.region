@@ -11,7 +11,7 @@
 
   <body>
     <div class="header">
-        <h2>Fort York</h2>
+        <h2 data-content-field="title">{website.siteTitle}</h2>
 
         <div class="nav-icon">
             <div class="nav-icon--top"></div>
