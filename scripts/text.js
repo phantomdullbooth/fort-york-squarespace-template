@@ -1,12 +1,15 @@
-function postmarkArticle(location, publishedOn, mainCategory) {
-    const postmarkLocation = document.getElementById(location)
+// --------------- RETURNS DATE AND CATEGORIES --------------- //
+// --------------- RETURNS DATE AND CATEGORIES --------------- //
+
+function printMetadata(metadataId, addedOn, categories) {
+    const addedOn = new Date(parseInt(addedOn))
+    const metadataId = document.getElementById(metadataId)
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec']
-    const publishedDate = new Date(parseInt(publishedOn))
 
-    let month = months[publishedDate.getMonth()]
-    let date = publishedDate.getDate()
+    let month = months[addedOn.getMonth()]
+    let date = addedOn.getDate()
 
-    postmarkLocation.innerHTML = month + ' ' + date + ' —— ' + mainCategory
+    metadataLocation.innerHTML = month + ' ' + date + ' —— ' + categories
 }
 
 function renderSneakpeek(articleType, graphicBox, excerptBox) {

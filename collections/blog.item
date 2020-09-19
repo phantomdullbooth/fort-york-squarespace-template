@@ -12,19 +12,14 @@
             <img src="{assetUrl}" alt="{title}" />
         </div>
 
-
-        <div class="article__graphic">
-            <img src="{assetUrl}" alt="{title} graphic" />
-        </div>
-
-        <div class="article__text">
+        <article>
             {body}
-            <p style="color:#808080;">—{author.displayName}
-        </div>
+            <p style="color:#808080;">—{author.displayName}</p>
+        </article>
 
         <squarespace:script src="text.js" combo="false" />
         <script>
-            postmarkArticle(`article__info--{id}`, `{addedOn}`, `{categories}`)
+            printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)
         </script>
 
     {.end}

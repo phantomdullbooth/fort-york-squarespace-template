@@ -7,6 +7,22 @@ a {
 }
 
 article {
+    .margins();
+    margin-bottom: @headerHeight;
+
+    blockquote {
+        margin: 0;
+
+        p {
+            font-family: 'Space Grotesk';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            text-transform: uppercase;
+        }
+    }
+
     .sqs-block:nth-last-of-type(1) {
         padding-bottom: 0 !important; // signature goes right after
     }
@@ -39,25 +55,6 @@ article {
 
 
 
-
-
-
-.article__text {
-    .margins();
-
-    blockquote {
-        margin: 0;
-
-        p {
-            font-family: 'Space Grotesk';
-            font-size: 25px;
-            font-style: normal;
-            font-weight: bold;
-            line-height: 125%;
-            text-transform: uppercase;
-        }
-    }
-}
 
 
 body,
