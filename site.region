@@ -46,6 +46,6 @@
 <script>
     menuToggle.addEventListener('click', () => {
         toggleMenu()
-    }, false);
+    }, true);
 </script>
 
