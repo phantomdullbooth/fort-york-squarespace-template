@@ -34,7 +34,7 @@
                     <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
                 </div>
 
-                <div class="preview__excerpt" id="excerpt--{id}">{excerpt|truncate 200}</div>
+                <div class="preview__excerpt" id="excerpt--{id}">{excerpt|truncate 5000}</div>
                 <div class="preview__image image-height--medium" id="image--{id}">
                     <img src="{assetUrl}" alt="{title}" />
                 </div>
