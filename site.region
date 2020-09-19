@@ -11,11 +11,13 @@
 
   <body>
     <div class="header">
-        <h2 data-content-field="site-title">{website.siteTitle}</h2>
+        <div class="container">
+            <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
-        <div class="nav-icon">
-            <div class="nav-icon--top"></div>
-            <div class="nav-icon--bottom"></div>
+            <div class="nav-icon">
+                <div class="nav-icon--top"></div>
+                <div class="nav-icon--bottom"></div>
+            </div>
         </div>
     </div>
 

@@ -99,18 +99,30 @@ body {
 }
 
 .header {
-    .margins();
-
     align-items: center;
     display: flex;
     flex-direction: row;
     height: @height;
-    justify-content: space-between;
+    justify-content: center;
+
+
+    .container {
+        margin: auto;
+        .margins();
+    }
+
+    // align-items: center;
+    // display: flex;
+    // flex-direction: row;
+    
+    // justify-content: space-between;
 
     h2 {
         color: #D8D8D8;
     }
 }
+
+
 
 h1, h2, h3, h4 {
     margin: 0;
