@@ -8,7 +8,7 @@ function colorHeaderElements(navigationOpen) {
 }
 
 function toggleNavigation() {
-    if (headerBackground.style.backgroundColor != '#000000') {
+    if (headerBackground.style.backgroundColor !== '#000000') {
         colorHeaderElements(true)
     }
 }
