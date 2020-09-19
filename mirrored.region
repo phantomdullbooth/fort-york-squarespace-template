@@ -6,10 +6,11 @@
                     <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
                 </div>
 
-                <div class="feature__image"
+                <div class="feature__image">
+
+                </div>
             </div>            
         {.end}
-    </div>
 </squarespace:query>
 
 
