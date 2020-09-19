@@ -1,5 +1,6 @@
 const headerBackground = document.getElementById("header")
 const navIcon = document.getElementById("nav-icon")
+const navigationMenu = document.getElementById("navigation-menu")
 
 function colorHeaderElements(navigationOpen) {
     if (navigationOpen === true) {
@@ -10,9 +11,11 @@ function colorHeaderElements(navigationOpen) {
 }
 
 function toggleNavigation() {
-    if (headerBackground.style.backgroundColor === 'transparent') {
+    if (navigationMenu.style.display === 'none') {
         colorHeaderElements(true)
+        navigationMenu.style.display = 'block'
     } else {
         colorHeaderElements(false)
+        navigationMenu.style.display = 'none'
     }
 }
