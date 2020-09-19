@@ -1,9 +1,0 @@
-<nav>
-    <span class="minor">Follow us</span>
-    
-    {.repeated section items}
-        {.section externalLink}
-            <h4><a href="{url}"{.section newWindow} target="_blank"{.end}>{title}</a></h4>
-        {.end}
-    {.end}
-</nav>
