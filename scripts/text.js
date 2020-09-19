@@ -36,17 +36,6 @@ function determinePreviewType(previewType, excerptId, imageId) {
 
 
 
-function renderSneakpeek(articleType, graphicBox, excerptBox) {
-    if (articleType === 'image-focus') {
-        document.getElementById(graphicBox).style.display = 'block'
-        document.getElementById(excerptBox).style.display = 'none'
-    } else {
-        document.getElementById(excerptBox).style.display = 'block'
-        document.getElementById(graphicBox).style.display = 'none'
-    }
-}
-
-
 
 // 
 
