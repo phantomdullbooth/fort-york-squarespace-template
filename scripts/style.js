@@ -14,8 +14,13 @@ function toggleNavigation() {
     if (menu.style.display === 'none') {
         colorHeaderElements(true)
         menu.style.display = 'block'
-    } else {
+    } else if (menu.style.display === 'block') {
         colorHeaderElements(false)
         menu.style.display = 'none'
     }
 }
+
+// document.getElementById("menu-toggle").addEventListener("click", function() => {
+//     console.log('what')
+//     toggleNavigation()
+// })
