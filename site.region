@@ -25,13 +25,6 @@
         <squarespace:navigation navigationId="navigation" template="navigation" />
     </div>
 
-    <squarespace:script src="style.js" combo="false" />
-    <script>
-        navIcon.addEventListener("click", () => {
-            toggleNavigation()
-        })
-    </script>
-
     <main role="main" data-content-field="main-content">{squarespace.main-content}</main>
 
 
@@ -50,3 +43,10 @@
 
   </body>
 </html>
+
+<squarespace:script src="style.js" combo="false" />
+    <script>
+        navIcon.addEventListener("click", () => {
+            toggleNavigation()
+        })
+    </script>
