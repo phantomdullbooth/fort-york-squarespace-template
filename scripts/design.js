@@ -1,5 +1,3 @@
-const menuToggle = document.getElementById("menu-toggle")
-
 function styleHeader(isMenuOpens) {
     const header = document.getElementById("header")
 
