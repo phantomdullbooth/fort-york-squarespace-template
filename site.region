@@ -30,7 +30,7 @@
         {.repeated section items}
             <div class="preview" style="margin-top:85px;">
                 <div class="background">
-                    <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{.alternates with}, {.end}{.end}</span>
+                    <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
                     <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
                 </div>
 
