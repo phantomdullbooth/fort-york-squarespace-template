@@ -9,7 +9,7 @@ function printMetadata(metadataId, addedOn, categories) {
     let month = months[addedOn.getMonth()]
     let date = addedOn.getDate()
 
-    metadataLocation.innerHTML = month + ' ' + date + ' —— ' + categories
+    metadataId.innerHTML = month + ' ' + date + ' —— ' + categories
 }
 
 function renderSneakpeek(articleType, graphicBox, excerptBox) {
