@@ -48,6 +48,7 @@
     <script>
     console.log(navIcon)
         navIcon.addEventListener("click", () => {
+            event.preventDefault();
             toggleNavigation()
         })
     </script>
