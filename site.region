@@ -35,8 +35,8 @@
                 </div>
 
                 <div id="excerpt--{id}">{excerpt}</div>
-                <div class="image-container image-height--medium" id="image--{id}">
-                    <img src="{assetUrl}" class="preview__image" alt="{title}" />
+                <div class="preview__image image-height--medium" id="image--{id}">
+                    <img src="{assetUrl}" alt="{title}" />
                 </div>
             </div>
             
