@@ -6,5 +6,5 @@
             <h4><a href="{fullUrl}">{navigationTitle}</a></h4>
         {.end}
     {.end}
-    
+
 </nav>
