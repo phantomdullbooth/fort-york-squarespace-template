@@ -14,7 +14,7 @@
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div id="menu-toggle">
                 <div></div>
                 <div></div>
             </div>
@@ -44,6 +44,8 @@
 
 <squarespace:script src="style.js" combo="false" />
 <script>
-
+    document.getElementById("menu-toggle").addEventListener('click', () => {
+        toggleMenu()
+    })
 </script>
 
