@@ -19,10 +19,10 @@
                 <div></div>
             </div>
         </div>
-    </div>
 
-    <div id="menu">
+        <div id="menu">
         <squarespace:navigation navigationId="navigation" template="navigation" />
+    </div>
     </div>
 
     <main role="main" data-content-field="main-content">{squarespace.main-content}</main>
