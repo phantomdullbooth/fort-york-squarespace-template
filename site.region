@@ -44,9 +44,7 @@
 
 <squarespace:script src="design.js" combo="false" />
 <script>
-console.log(menuToggle)
-    menuToggle.addEventListener('click', () => {
-        toggleMenu();
-    }, true)
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+        toggleMenu()
+    })
 </script>
-
