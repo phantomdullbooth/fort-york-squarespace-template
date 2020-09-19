@@ -7,7 +7,7 @@
                 </div>
 
                 <div class="feature__image">
-
+                    <img src="{assetUrl}" alt="{title}">
                 </div>
             </div>            
         {.end}
