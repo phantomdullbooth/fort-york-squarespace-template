@@ -122,6 +122,25 @@ body {
     }
 }
 
+#navigation-menu {
+    background: @darkGrey;
+    display: none;
+    height: calc(@headerHeight ~"-" (@headerHeight / 3px));
+    margin-top: @headerHeight;
+    position: absolute;
+    width: 100%;
+
+    .nav--main {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        .margins();
+        width: calc(100% ~"-" (@pageMargin * 2px));
+    }
+}
+
 
 
 h1, h2, h3, h4 {
@@ -185,15 +204,6 @@ main {
 
 .nav-icon--bottom {
     width: 90px;
-}
-
-#navigation-menu {
-    background: @darkGrey;
-    display: none;
-    height: calc(@headerHeight ~"-" (@headerHeight / 3px));
-    margin-top: @headerHeight;
-    position: absolute;
-    width: 100%;
 }
 
 .nav-icon--top {
