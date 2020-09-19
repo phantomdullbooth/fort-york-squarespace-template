@@ -1,19 +1,17 @@
-<!-- ========== INDIVIDUAL ARTICLE =========== -->
-<!-- ========== INDIVIDUAL ARTICLE =========== -->
+<!-- ------------- INDIVIDUAL POST ------------- -->
+<!-- ------------- INDIVIDUAL POST ------------- -->
 
-<div class=""
-
-
-
-
-
-<article>
+<div>
     {.section item}
-    
-        <div class="article__header">
-            <span class="unimportant" id="article__info--{id}"></span>
-            <h3 class="no-underline" data-content-field="title">{title}</h3>
+        <div class="background">
+            <span class="metadata" id="metadata--{id}"></span>
+            <h3 data-content-field="title" class="no-underline">{title}</h3>
         </div>
+
+        <div class="image-container image-height--medium">
+            <img src="{assetUrl}" alt="{title}" />
+        </div>
+
 
         <div class="article__graphic">
             <img src="{assetUrl}" alt="{title} graphic" />
@@ -30,4 +28,4 @@
         </script>
 
     {.end}
-</article>
+</div>
