@@ -75,9 +75,9 @@ body {
 .footer {
     background-color: #0a0a0a;
     bottom: 0;
-    height: calc(~"100vh - 58px");
+    height: calc(100vh ~"-" @headerHeight);
     position: relative;
-    margin-top: 58px;
+    margin-top: @headerHeight;
     width: 100%;
 
     nav {
