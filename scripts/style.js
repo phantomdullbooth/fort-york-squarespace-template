@@ -8,7 +8,7 @@ function colorHeaderElements(navigationOpen) {
     }
 }
 
-function toggleNavigation() {
+function toggleMenu() {
     const menu = document.getElementById("menu")
 
     if (menu.style.display === 'none') {
@@ -22,5 +22,5 @@ function toggleNavigation() {
 
 // document.getElementById("menu-toggle").addEventListener("click", function() => {
 //     console.log('what')
-//     toggleNavigation()
+//     toggleMenu()
 // })
