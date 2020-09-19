@@ -14,7 +14,7 @@
         <div class="container">
             <h2 data-content-field="site-title">{website.siteTitle}</h2>
 
-            <div id="nav-icon">
+            <div id="nav-icon" onclick="toggleNavigation()">
                 <div class="nav-icon--top"></div>
                 <div class="nav-icon--bottom"></div>
             </div>
