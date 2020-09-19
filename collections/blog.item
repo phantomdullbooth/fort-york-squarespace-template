@@ -16,11 +16,5 @@
             {body}
             <p style="color:#808080;">—{author.displayName}</p>
         </article>
-
-        <squarespace:script src="text.js" combo="false" />
-        <script>
-            printMetadata(`metadata--{id}`, `{addedOn}`, `{categories}`)
-        </script>
-
     {.end}
 </div>
