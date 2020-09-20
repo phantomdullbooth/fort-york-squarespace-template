@@ -10,9 +10,10 @@
     {.end}
 
     <div class="blog-list">
-    {.if items[0]} 
+        {.if items.0} 
                 <h1>Hi</h1>
             {.or}
+
         {.repeated section items}
 
             
