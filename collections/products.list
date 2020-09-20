@@ -1,0 +1,17 @@
+<!-- ========== LIST OF PRODUCTS =========== -->
+<!-- ========== LIST OF PRODUCTS =========== -->
+
+<div>
+    {.section collection}
+        <div class="page-headline">
+            <h1 data-content-field="title">{title}</h1>
+            {description}
+        </div>
+    {.end}
+
+    <div>
+        {.repeated section items}
+            
+        {.end}
+    </div>
+</div>
