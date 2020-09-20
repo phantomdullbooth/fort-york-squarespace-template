@@ -11,6 +11,11 @@
 
     <div class="blog-list">
         {.repeated section items}
+
+            {@0} 
+                <h1>Hi</h1>
+            {.or}
+
             <div class="preview">
                 <div class="background">
                     <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
@@ -28,6 +33,7 @@
                 determinePreviewType(`{tags}`, `image--{id}`, `excerpt--{id}`)
                           
             </script>
+            {.end}
         {.end}
     </div>
 </div>
