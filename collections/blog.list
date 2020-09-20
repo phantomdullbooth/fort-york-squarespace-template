@@ -13,7 +13,8 @@
         
 
         {.repeated section items}
-            {.if @0}
+
+            {.equal @index 0}
                 <h1>{@index}</h1>
             {.or}
             
