@@ -16,9 +16,10 @@
 
             {.equal? @index 1}
                 <div class="preview--featured">
-                    <div class="preview__image">
-                        <img src="{assetUrl}" alt="{title}" />
-                    </div>
+                    <img src="{assetUrl}" alt="{title}" />
+                    {#  <div class="preview__image">
+                        
+                    </div>  }
 
                     <div class="background">
                         <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
