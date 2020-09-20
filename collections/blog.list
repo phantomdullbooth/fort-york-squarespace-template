@@ -13,7 +13,7 @@
         
 
         {.repeated section items}
-            {items.0?}
+            {.items.0?}
                 <h1>Hi</h1>
             {.or}
             
