@@ -8,4 +8,30 @@
             {description}
         </div>
     {.end}
+
+    <div class="blog-list">
+        {.repeated section items}
+            <div>
+                <div class="background">
+                    <span class="metadata">{addedOn|date %b %e}{.if categories}——{.repeated section categories}{@}{.alternates with}, {.end}{.end}</span>
+                    <h3 data-content-field="title"><a href="{fullUrl}">{title}</a></h3>
+                </div>
+
+                <div class="preview__excerpt" id="excerpt--{id}">{excerpt}</div>
+                <div class="preview__image image-height--medium" id="image--{id}">
+                    <img src="{assetUrl}" alt="{title}" />
+                </div>
+            </div>
+
+            <squarespace:script src="text.js" combo="false" />
+            <script>
+                determinePreviewType(`{tags}`, `image--{id}`, `excerpt--{id}`)
+                          
+            </script>
+        {.end}
+    </div>
 </div>
+
+
+
+
