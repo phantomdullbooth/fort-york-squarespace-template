@@ -16,7 +16,7 @@
 
             {.equal? @index 1}
                 <div class="preview--featured">
-                    <div class="preview__image image-height--medium">
+                    <div class="preview__image">
                         <img src="{assetUrl}" alt="{title}" />
                     </div>
 
