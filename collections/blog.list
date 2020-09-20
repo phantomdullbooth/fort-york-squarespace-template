@@ -10,11 +10,12 @@
     {.end}
 
     <div class="blog-list">
-        {.repeated section items}
-
-            {@0} 
+    {.if items[0]} 
                 <h1>Hi</h1>
             {.or}
+        {.repeated section items}
+
+            
 
             <div class="preview">
                 <div class="background">
