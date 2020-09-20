@@ -1,9 +1,9 @@
 <!-- ========== LIST OF ARTICLES =========== -->
 <!-- ========== LIST OF ARTICLES =========== -->
 
-<div class="articles">
+<div>
     {.section collection}
-        <div class="page-introduction">
+        <div class="page-headline">
             <h1 data-content-field="title">{title}</h1>
             {description}
         </div>

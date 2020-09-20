@@ -250,14 +250,7 @@ p, #header #navigation a {
     margin: 0;
 }
 
-.page-introduction {
-    .margins();
-    margin-bottom: 35px;
 
-    h1 {
-        margin-bottom: 10px;
-    }
-}
 
 #primary-feature {
     position: absolute;
@@ -349,7 +342,7 @@ p, #header #navigation a {
     align-items: baseline;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
     height: 350px;
     position: relative;
     right: 0;
@@ -372,5 +365,17 @@ p, #header #navigation a {
     img {
         height: 100%;
         width: auto;
+    }
+}
+
+
+
+
+.page-headline {
+    .margins();
+    margin-bottom: calc(@pageMargin * 2px);
+
+    h1 {
+        margin-bottom: 10px;
     }
 }
