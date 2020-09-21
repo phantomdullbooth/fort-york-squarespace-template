@@ -60,14 +60,7 @@ html {
     height: 100%;
 }
 
-.footer {
-    background-color: #0a0a0a;
-    bottom: 0;
-    height: calc(100vh ~"-" @headerHeight);
-    position: relative;
-    margin-top: @headerHeight;
-    width: 100%;
-}
+
 
 #header {
     background-color: transparent;
@@ -150,13 +143,6 @@ nav {
     }
 }
 
-
-
-
-
-footer nav:nth-of-type(1) {
-    padding-top: 36px;
-}
 
 
 
@@ -308,6 +294,13 @@ footer nav:nth-of-type(1) {
 
 
 .footer {
+    background-color: @black;
+    bottom: 0;
+    height: calc(100vh ~"-" @headerHeight);
+    margin-top: @headerHeight;
+    position: relative;
+    width: 100%;
+
     .metadata {
         text-transform: uppercase;
     }
@@ -315,4 +308,11 @@ footer nav:nth-of-type(1) {
 
 .footer > * {
     .margins();
+}
+
+
+
+
+footer nav:nth-of-type(1) {
+    padding-top: 36px;
 }
