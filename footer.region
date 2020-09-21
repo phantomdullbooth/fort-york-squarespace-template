@@ -9,7 +9,7 @@
         <squarespace:navigation navigationId="mainNavigation" template="main-navigation" />
     </section>
 </div>
-
+https://github.com/winslowdev/fortyork_squarespace.git
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
     {squarespace-footers}
 
