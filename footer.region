@@ -1,6 +1,8 @@
 <div class="footer">
-    <span class="metadata">Find stuff</span>
-    <squarespace:navigation navigationId="mainNavigation" template="main-navigation" />
+    <section>
+        <span class="metadata">Find stuff</span>
+        <squarespace:navigation navigationId="mainNavigation" template="main-navigation" />
+    </section>
 </div>
 
     <!--Injection point for tracking scripts and user content from the code injection tab.-->
