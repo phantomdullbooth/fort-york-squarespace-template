@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-}
-
 article {
     .margins();
     margin-bottom: @headerHeight;
@@ -13,6 +9,7 @@ article {
     blockquote {
         margin: 0;
 
+        // !!!!!! EXCEPTION — because squarespace styling !!!!!! 
         p {
             font-family: 'Space Grotesk';
             font-size: 25px;
@@ -63,12 +60,6 @@ html {
     height: 100%;
 }
 
-body {
-    color: #000000;
-    font-family: @defaultFont;
-    font-style: normal;
-}
-
 .footer {
     background-color: #0a0a0a;
     bottom: 0;
@@ -76,18 +67,6 @@ body {
     position: relative;
     margin-top: @headerHeight;
     width: 100%;
-
-    nav {
-        a {
-            color: #ffffff;
-            text-decoration: none;
-        }
-    }
-
-    h4 {
-        color: #ffffff;
-        margin-bottom: 7px;
-    }
 }
 
 #header {
@@ -116,52 +95,8 @@ body {
 }
 
 
-h1, h2, h3, h4 {
-    margin: 0;
-}
 
-h1,
-h2,
-.sqs-search-ui-button-wrapper input,
-.sqs-search-ui-button-wrapper input::placeholder {
-    font-family: 'Space Grotesk';
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-}
 
-h1 {
-    font-size: 45px;
-    letter-spacing: -0.01em;
-    line-height: 100%;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 25px;
-    line-height: 22px;
-}
-
-h3 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 125%; // or 22px
-    text-decoration-line: underline;
-
-    a {
-        color: @black;
-    }
-}
-
-h4 {
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    line-height: 125%; // 27px;
-}
 
 main {
     margin-top: calc(@headerHeight ~"+" 25px);
@@ -215,9 +150,7 @@ nav {
     }
 }
 
-.no-underline {
-    text-decoration-line: none;
-}
+
 
 
 
@@ -297,15 +230,6 @@ p, #header #navigation a {
             padding: 0 !important;
         }
     }
-}
-
-.metadata {
-    display: block;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 100%;
-    margin-bottom: 5px;
 }
 
 .preview__image {
@@ -399,3 +323,8 @@ p, #header #navigation a {
 .preview {
     margin-bottom: 60px;
 }
+
+
+
+
+
