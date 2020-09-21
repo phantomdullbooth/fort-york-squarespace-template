@@ -1,5 +1,9 @@
 <div class="footer">
     <section>
+        <squarespace:block-field id="footer__social-links" columns="1" />
+    </section>
+
+    <section>
         <span class="metadata">Find stuff</span>
         <squarespace:navigation navigationId="mainNavigation" template="main-navigation" />
     </section>
