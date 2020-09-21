@@ -1,5 +1,6 @@
 <div class="footer">
     <section>
+        <span class="metadata">Follow us</span>
         <squarespace:block-field id="footer__social-links" columns="1" />
     </section>
 
