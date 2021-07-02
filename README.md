@@ -1,1 +1,1 @@
-# Squarespace theme — Fort York
+# Fort York Squarespace Theme
